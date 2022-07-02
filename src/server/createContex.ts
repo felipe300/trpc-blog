@@ -5,4 +5,4 @@ export function createContext ({ req, res }:
   return { req, res }
 }
 
-export type Contex = ReturnType<typeof createContext>
+export type Context = ReturnType<typeof createContext>
