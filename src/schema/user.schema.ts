@@ -11,3 +11,11 @@ export const createUserOutputSchema = z.object({
 })
 
 export type CreateUserInput = z.infer<typeof createUserSchema>
+
+// request one time password
+export const requestOtpSchema = z.object({
+  email: z.string().email(),
+  redirect: z.string().default('/')
+})
+
+export type RequestOtpInput = z.infer<typeof requestOtpSchema>
