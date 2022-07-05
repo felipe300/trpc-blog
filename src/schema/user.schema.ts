@@ -19,3 +19,7 @@ export const requestOtpSchema = z.object({
 })
 
 export type RequestOtpInput = z.infer<typeof requestOtpSchema>
+
+export const verifyOtpSchema = z.object({
+  hash: z.string()
+})
